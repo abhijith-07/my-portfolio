@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap');
+
+:root {
+    --black: #1c1c1c;
+    --white: #fff;
+    --grey: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 5fr;
+    padding: .5em 0;
+}
+
+nav .logo {
+    padding-left: 0;
+}
+
+.mail-container .mail {
+    color: var(--grey);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--white);
+    padding: 0 1em;
+}
+
+section.hero-section {
+    display: flex;
+    min-height: 530px;
+    align-items: flex-end;
+    display: grid;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--grey);
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}
+
+.intro {
+    padding-top: 1rem;
+}
+
+.intro .location {
+    color: var(--grey);
+}
+
+h1.hero-title {
+    font-size: 3.75rem;
+    font-weight: 200;
+    height: 100%;
+    display: grid;
+}
+
+.hero-title span.greetings {
+    color: var(--grey);
+}
+
+h1 .avatar {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.avatar img {
+    width: 6rem;
+    border-radius: 50%;
+    padding: .15em;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: min-content;
+    height: 600px;
+    gap: 1rem;
+    padding: 1em 0;
+}
+
+.project {
+    height: 600px;
+    width: 100%;
+    box-shadow: 0px 60px 20px var(--black) inset;
+}
+
+.project .title {
+    position: absolute;
+    margin: .5em;
+    padding: .25em 1em;
+}
+
+.project .title h3 {
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.project .title .description {
+    color: var(--grey);
+    font-size: .85rem;
+}
+
+.project img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    position: relative;
+    z-index: -1;
+}
