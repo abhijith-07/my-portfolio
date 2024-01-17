@@ -104,13 +104,16 @@ h1 .avatar {
 .project {
     height: 600px;
     width: 100%;
-    box-shadow: 0px 60px 20px var(--black) inset;
+    cursor: pointer;
+    filter: saturate(0);
 }
 
 .project .title {
     position: absolute;
     margin: .5em;
     padding: .25em 1em;
+    background-color: #1c1c1c80;
+    border-radius: 3px;
 }
 
 .project .title h3 {
@@ -127,7 +130,6 @@ h1 .avatar {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    filter: grayscale(1);
     position: relative;
     z-index: -1;
 }
