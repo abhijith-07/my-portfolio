@@ -1,6 +1,14 @@
+let cursor = document.querySelector(".cursor")
 let projects = document.querySelectorAll(".project")
 let i = 0
 
+// Cursor
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top =  e.clientY + "px";
+})
+
+// Projects Hovering
 projects.forEach((proj)=>{
     proj.addEventListener("mouseover", ()=>{
         let project = document.getElementById(`${proj.id}`)
