@@ -63,6 +63,7 @@ section.hero-section {
 
 .intro {
     padding-top: 1rem;
+    animation: slide-in .5s ease-in;
 }
 
 .intro .location {
@@ -74,6 +75,7 @@ h1.hero-title {
     font-weight: 200;
     height: 100%;
     display: grid;
+    animation: slide-in .75s ease-in;
 }
 
 .hero-title span.greetings {
@@ -106,6 +108,7 @@ h1 .avatar {
     width: 100%;
     cursor: pointer;
     filter: saturate(0);
+    animation: slide-in 1s ease-in;
 }
 
 .project .title {
@@ -132,4 +135,15 @@ h1 .avatar {
     object-fit: cover;
     position: relative;
     z-index: -1;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
